@@ -15,7 +15,7 @@ export default function App() {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name='InicialScreen' component={InicialScreen} options={{ headerShown: false}}/>
+          <Stack.Screen name='InicialScreen' component={InicialScreen} options={{ headerShown: false, title: 'Tela Inicial'}}/>
           <Stack.Screen name='CadastroScreen' component={CadastroScreen} options={{ title: 'Área de Cadastro' }}/>
           <Stack.Screen name='HomeScreen' component={HomeScreen} options={{ title: 'Bem vindo!' }}/>
           <Stack.Screen name='HomeScreen2' component={HomeScreen2} options={{ title: 'Avaliar contéudos' }}/>
