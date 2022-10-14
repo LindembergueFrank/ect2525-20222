@@ -21,9 +21,11 @@ import { StyleSheet, Image, TouchableOpacity, Button ,View, Text, TextInput, Ale
         <TextInput style={styles.input} secureTextEntry={true} placeholder='Senha'/>
         <TextInput style={styles.input} secureTextEntry={true} placeholder='Confirmar Senha'/>
 
-        <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('InicialScreen', Alert.alert('Parabéns, sua conta foi criada! Faça o login para aproveitar nosso app.'))} >
-          <Text style={styles.BTtext}>Criar Conta</Text>
-        </TouchableOpacity>
+        <View style={styles.box}>
+          <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('InicialScreen', Alert.alert('Parabéns, sua conta foi criada! Faça o login para aproveitar nosso app.'))} >
+            <Text style={styles.BTtext}>Criar Conta</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
 
@@ -70,7 +72,7 @@ import { StyleSheet, Image, TouchableOpacity, Button ,View, Text, TextInput, Ale
     width: 130,
   },
   botao: {
-    marginTop: 6,
+    marginTop: 10,
     padding: 8,
     height: 50,
     width: 350,
@@ -83,5 +85,7 @@ import { StyleSheet, Image, TouchableOpacity, Button ,View, Text, TextInput, Ale
     fontWeight: 'bold',
     fontSize: 15,
     color: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

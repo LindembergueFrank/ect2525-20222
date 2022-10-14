@@ -16,7 +16,7 @@ export default function HomeScreen({ navigation }) {
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('HomeScreen3')} >
-                <Text style={styles.BTtext}>Adicionar avaliaçao</Text>
+                <Text style={styles.BTtext}>Adicionar contéudo</Text>
             </TouchableOpacity>
 
         </View> 

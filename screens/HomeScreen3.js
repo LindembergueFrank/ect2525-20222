@@ -9,11 +9,13 @@ export default function HomeScreen3({ navigation }) {
 
             <TextInput style={styles.input} placeholder='Título'/>
             <TextInput style={styles.input} placeholder='Ano de lançamento'/>
-            <TextInput style={styles.input} placeholder='Gênero'/>
+            <TextInput style={styles.input} placeholder='Gênero' />
 
-            <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('HomeScreen', Alert.alert('Sua avaliação foi adicionada com sucesso!'))} >
-                <Text style={styles.BTtext}>Adicionar avaliação</Text>
-            </TouchableOpacity>
+            <View style={styles.box}>
+              <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('HomeScreen', Alert.alert('Sua avaliação foi adicionada com sucesso!'))} >
+                  <Text style={styles.BTtext}>Adicionar contéudo</Text>
+              </TouchableOpacity>
+            </View>
         </View>  
       </View>   
     )
@@ -28,12 +30,14 @@ const styles = StyleSheet.create({
  cabecario: {
     backgroundColor: 'white',
     flexDirection: 'column',
-    alignItems: 'center',
     margin: 20,
     width: 300,
     height: 400,
     padding: 20,
     borderRadius: 5,
+ },
+ box: {
+  alignItems: 'center',
  },
  botao: {
     marginTop: 15,

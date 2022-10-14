@@ -136,19 +136,4 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
  },
- botao: {
-    marginTop: 15,
-    padding: 8,
-    height: 50,
-    width: 150,
-    backgroundColor: '#1CA4B7',
-    borderRadius: 4,
-    justifyContent: 'center',
-    alignItems: 'center',
- },
- BTtext: {
-    fontWeight: 'bold',
-    fontSize: 15,
-    color: 'white',
-  },
 });
